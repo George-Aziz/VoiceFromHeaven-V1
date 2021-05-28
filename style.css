@@ -176,7 +176,7 @@ nav{
     height: 30vw;
     width: 21vw;
     border-radius: 2vw;
-    background: linear-gradient(0deg, rgb(37, 37, 37), rgba(255,0,0,0) 105%);
+    background: linear-gradient(0deg, rgb(37, 37, 37), rgba(0,0,0,0) 105%);
     transition: 0.3s;
     opacity: 0;
     position: relative;
