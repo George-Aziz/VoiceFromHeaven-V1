@@ -74,7 +74,7 @@ nav{
 /*Section right under navigation bar (First Section of Home Page)*/
 .landing{
     position: relative;
-    background-image: url('images/heaven-img.jpg');
+    background-image: url(https://voicefromheaven.s3-ap-southeast-1.amazonaws.com/Images/heaven-img.jpg);
     width: 100vw;
     height: 50vw;
     background-repeat: no-repeat;
@@ -134,7 +134,7 @@ nav{
 .magazine-bg{
     width: 100vw;
     height: 55vw;
-    background-image: url('images/sky-3.jpg');
+    background-image: url(https://voicefromheaven.s3-ap-southeast-1.amazonaws.com/Images/sky-3.png);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -202,45 +202,45 @@ nav{
 
 /*Individual Magazine Images*/
 .magazine-1 {
-    background-image: url(images/Issue1.jpg);
+    background-image: url(https://voicefromheaven.s3-ap-southeast-1.amazonaws.com/Images/Issue1.jpg);
     background-size: cover;
 }
 
 .magazine-2 {
-    background-image: url(images/Audio1.png);
+    background-image: url(https://voicefromheaven.s3-ap-southeast-1.amazonaws.com/Images/Audio1.png);
     background-size: cover;
 }
 
 .magazine-3 {
-    background-image: url(images/Issue2.png);
+    background-image: url(https://voicefromheaven.s3-ap-southeast-1.amazonaws.com/Images/Issue2.png);
     background-size: cover;
 }
 
 .magazine-4 {
-    background-image: url(images/Comm-2.png);
+    background-image: url(https://voicefromheaven.s3-ap-southeast-1.amazonaws.com/Images/Comm-2.png);
     background-size: cover;
 }
 
 .magazine-5 {
-    background-image: url(images/Audio2.png);
+    background-image: url(https://voicefromheaven.s3-ap-southeast-1.amazonaws.com/Images/Audio2.png);
     background-size: cover;
 }
 
 .magazine-6 {
-    background-image: url(images/Issue3.jpg);
+    background-image: url(https://voicefromheaven.s3-ap-southeast-1.amazonaws.com/Images/Issue3.jpg);
     background-size: cover;
 }
 
 .magazine-7 {
-    background-image: url(images/Comm-3.jpg);
+    background-image: url(https://voicefromheaven.s3-ap-southeast-1.amazonaws.com/Images/Comm-3.jpg);
     background-size: cover;
 }
 .magazine-8 {
-    background-image: url(images/Audio3.png);
+    background-image: url(https://voicefromheaven.s3-ap-southeast-1.amazonaws.com/Images/Audio3.png);
     background-size: cover;
 }
 .magazine-9 {
-    background-image: url(images/Issue4.jpg);
+    background-image: url(https://voicefromheaven.s3-ap-southeast-1.amazonaws.com/Images/Issue4.jpg);
     background-size: cover;
 }
 
