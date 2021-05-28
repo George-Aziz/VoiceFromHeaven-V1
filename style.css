@@ -1,0 +1,608 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/*Main Navigation Bar*/
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    font-family: 'Poppins', sans-serif;
+    background-color: #fff;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    transition: 1s;
+    padding-top: 1.5vw;
+    padding-bottom: 1.5vw;
+    box-shadow: 0.20vw 0.20vw 0.75vw rgb(105, 105, 105);
+    z-index: 4;
+}
+
+/* Navigation Bar Logo on Top Left*/
+.logo{
+    color: #292929;
+    text-transform: uppercase;
+    font-size: 26px;
+}
+
+.nav-links{
+    display: flex;
+    justify-content: space-around;
+    width: 45%;
+}
+
+.nav-links li{
+    list-style: none;
+}
+
+.nav-links a{
+    color: #292929;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    padding-right: 0.5vw;
+}
+
+.phone-menu{
+    display: none;
+    cursor: pointer;
+}
+.phone-menu div{
+    width: 25px;
+    height: 2px;
+    background-color: #292929;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+.toggle .line1{
+    transform: rotate(-45deg) translate(-5px,5px);
+}
+.toggle .line2{
+    opacity: 0;
+}
+.toggle .line3{
+    transform: rotate(45deg) translate(-5px,-5px);
+}
+
+/*====================================INDEX HTML (HOMEPAGE)====================================*/
+
+/*Section right under navigation bar (First Section of Home Page)*/
+.landing{
+    position: relative;
+    background-image: url('images/heaven-img.jpg');
+    width: 100vw;
+    height: 50vw;
+    background-repeat: no-repeat;
+    background-size:cover;
+    z-index: 0;
+}
+
+/*Class for gradient overlay on image of sky*/
+.landing-gradient{
+    position: absolute;
+    background: linear-gradient(0deg, rgb(0, 182, 206), rgba(255,0,0,0) 100%);
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+}
+
+.bg-text-wrapper{
+    text-align: center;
+}
+
+/*Background Text for Landing Page first section*/
+.bg-text{
+    padding-left: 7.0vw;;
+    position: absolute;
+    font-size: 3vw;
+    font-weight: bold;
+    padding-top: 11vw;
+    line-height: 1.5;
+    z-index: 2;
+    font-family: 'Amaranth', sans-serif;
+    color:#fff;
+}
+
+/* Section under First page */
+.content{
+    height: 30vw;
+    background-color: #fff;
+}
+
+.title{
+    padding-top: 7vw;
+    padding-left: 10vw;
+    font-size: 4vw;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+}
+
+.description{
+    padding-top: 5vw;
+    padding-left: 10vw;
+    padding-right: 6vw;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2vw;
+}
+
+/*====================================Magazines Page====================================*/
+.magazine-bg{
+    width: 100vw;
+    height: 55vw;
+    background-image: url('images/sky-3.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.magazine-wrapper{
+    padding-top: 10vw;
+    width: 50vw;
+    height:45vw;
+    margin-left: 12.5vw;
+    margin-right: 12.5vw;
+}
+
+/* By default all slides for magazines are hidden*/
+.magazine-slide {
+    display: none;
+    grid-template-columns: auto auto auto;
+    gap: 5vw;
+}
+
+/*All Magazines Card Settings*/
+.magazines {
+    height: 30vw;
+    width: 21vw;
+    background-color:#333;
+    color:#fff;
+    box-shadow: 0.20vw 0.20vw 0.75vw rgb(105, 105, 105);
+    border-radius: 2vw;
+    font-size:5vw;
+    font-family:sans-serif;
+    cursor: pointer;
+}
+
+.magazines a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.magazine-gradient {
+    height: 30vw;
+    width: 21vw;
+    border-radius: 2vw;
+    background: linear-gradient(0deg, rgb(37, 37, 37), rgba(255,0,0,0) 105%);
+    transition: 0.3s;
+    opacity: 0;
+    position: relative;
+    z-index: 2;
+}
+
+.magazine-gradient:hover{
+    opacity: 100;
+    transition: 0.3s;
+}
+
+.magazine-text-wrapper:hover {
+    display: block;
+}
+
+.magazine-text {
+    padding-top: 20vw;
+    padding-left: 2vw;
+    line-height: 4.5vw;
+    font-size: 1.5vw;
+    font-family: 'Poppins', sans-serif;
+}
+
+/*Individual Magazine Images*/
+.magazine-1 {
+    background-image: url(images/Issue1.jpg);
+    background-size: cover;
+}
+
+.magazine-2 {
+    background-image: url(images/Audio1.png);
+    background-size: cover;
+}
+
+.magazine-3 {
+    background-image: url(images/Issue2.png);
+    background-size: cover;
+}
+
+.magazine-4 {
+    background-image: url(images/Comm-2.png);
+    background-size: cover;
+}
+
+.magazine-5 {
+    background-image: url(images/Audio2.png);
+    background-size: cover;
+}
+
+.magazine-6 {
+    background-image: url(images/Issue3.jpg);
+    background-size: cover;
+}
+
+.magazine-7 {
+    background-image: url(images/Comm-3.jpg);
+    background-size: cover;
+}
+.magazine-8 {
+    background-image: url(images/Audio3.png);
+    background-size: cover;
+}
+.magazine-9 {
+    background-image: url(images/Issue4.jpg);
+    background-size: cover;
+}
+
+/*Navigation Controls for magazine slider*/
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pagination a{
+    margin: 1vw;
+    width: 2vw;
+    height: 2vw;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  text-align: center;
+  background-color: rgb(46, 46, 46);
+  font-weight: bold;
+  font-size: 1.5vw;
+  transition: 0.6s ease;
+  border-radius: 50%;
+  color: #fff;
+}
+
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  background-color: rgb(46, 46, 46);
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover, .prev:hover, .next:hover {
+  background-color:rgb(50, 98, 175);
+  color: black;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 0.5s;
+  animation-name: fade;
+  animation-duration: 0.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/*Section Under Magazine Slider*/
+.thanks-wrapper {
+    display: flex;
+}
+
+.thanks-title {
+    padding-top: 5vw;
+    padding-left: 10vw;
+    font-size: 4vw;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+}
+
+.thanks-content {
+    padding-top: 10vw;
+    padding-left: 6vw;
+    padding-right: 12vw;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2vw;
+    float:right;
+    position: relative;
+}
+
+.thanks-img {
+    position: relative;
+    height: 35vw;
+    padding-left: 10vw;
+    padding-top: 5vw;
+    padding-bottom: 6vw;
+    width: 35vw;
+    float: left;
+    border-radius: 2vw;
+}
+
+/*====================================About Page====================================*/
+.about-content{
+    height: 50vw;
+}
+
+.about-content-wrapper {
+    display: flex;
+    padding-top: 5vw;
+    padding-bottom: 2vw;
+    /*background-image: url(/images/sky-4.png);*/
+    background-size: cover;
+    /*background-color: rgb(55, 104, 197);*/
+}
+
+.about-desc-wrapper{
+    margin-top: 5vw;
+}
+
+.about-title {
+    font-size: 4vw;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: underline;
+    text-underline-offset: 1vw;
+    text-decoration-thickness: 0.75vw;
+    text-decoration-style: dotted;
+}
+
+.about-description{
+    margin-top: 4vw;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2vw;
+    line-height: 4vw;
+}
+
+.about-img {
+    position: relative;
+    margin-top: 6vw;
+    margin-left: 4vw;
+    margin-right: 8vw;
+    height: 50vw;
+    width: 33vw;
+    border-radius: 0.5vw;
+}
+
+/*====================================Reflection Page====================================*/
+.landing-reflections{
+    padding-top: 10vw;
+}
+.video-wrapper{
+    text-align: center;
+    position: relative; 
+    padding-bottom: 56.25%; 
+    height: 0; 
+    overflow: hidden; 
+    max-width: 100%;
+}
+
+.video-wrapper iframe, .video-wrapper object, .video-wrapper embed { 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
+}
+
+.reflection-content{
+    padding-top: 3vw;
+    padding-left: 8vw;
+    padding-right: 8vw;
+    padding-bottom: 2vw;
+    
+}
+
+.reflection-title {
+    font-size: 4vw;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+}
+
+.reflection-description{
+    margin-top: 2vw;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2vw;
+    line-height: 4vw;
+}
+
+/*====================================Error Page====================================*/
+.error-content{
+    padding-top: 10vw;
+}
+
+.error-title {
+    font-size: 4vw;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+}
+
+.error-description{
+    margin-top: 2vw;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2vw;
+    line-height: 4vw;
+}
+
+
+/*Phone Mode - Screen Size Determined when there isn't enough space for nav bar list to be displayed on Desktop*/
+@media screen and (max-width:1060px){
+    body{
+        overflow-x: hidden;
+    }
+    .nav-links{
+        position:absolute;
+        right:0px;
+        height: 92vh;
+        top: 8vh;
+        display: flex;
+        background-color: #fff;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        transform: translateX(100%);
+        transition: transform 0.4s ease-in;
+    }
+    .nav{
+        background-color: rgba(255, 255, 255, 1);
+    }
+    .nav-links li{
+        opacity: 0;
+    }
+    .phone-menu{
+        display: block;
+    }
+
+    .landing{
+        height: 80vw;
+    }
+
+    .bg-text{
+        padding-top: 15vw;
+        line-height: 2.5;
+    }
+
+    .content{
+        height: 35vw;
+    }
+ 
+    
+    @media (orientation: portrait) 
+    {
+        .magazine-bg{
+            height:175vw;
+        }
+
+        .magazine-wrapper{
+            padding-top: 30vw;
+            height: 110vw;
+        }
+
+        .magazine-slide{
+            width: 85vw;
+            height: 110vw;
+            overflow-x: scroll;
+        }
+
+        .magazines {
+            width: 75vw;
+            height: 105vw;
+        }
+
+        .magazine-gradient {
+            height: 105vw;
+            width: 75vw;
+        }
+
+        .magazine-text{
+            font-size: 5.75vw;
+            padding-top: 85vw;
+            line-height: 8vw;;
+        }
+        
+        .pagination a{
+            height: 10vw;
+            width: 10vw;
+            margin-top: 45vw;
+        }
+        .prev, .next {
+            font-size: 6vw;
+        }
+
+        .thanks-content{
+            font-size: 3vw;
+        }
+
+        .thanks-img{
+            margin-top: 8vw;;
+            height: 50vw;
+            width: 50vw;;
+        }
+
+        .thanks-title
+        {
+            font-size: 10vw;
+        }
+
+        .about-content-wrapper{
+            margin-top: 15vw;
+        }
+    }
+
+    @media (orientation: landscape) 
+    {
+        .magazine-bg{
+            height:65vw;
+        }
+
+        .magazine-wrapper{
+            padding-top: 12.5vw;
+        }
+        
+        .magazine-text{
+            padding-top: 26vw;
+        }
+
+        .pagination a{
+            height: 6vw;
+            width: 6vw;
+            margin-top: 5vw;
+        }
+        .prev, .next {
+            font-size: 4vw;
+        }
+
+        .thanks-content{
+            font-size: 3vw;;
+        }
+
+        .thanks-img{
+            height: 40vw;
+            width: 40vw;;
+        }
+
+        .thanks-title
+        {
+            font-size: 7vw;
+        }
+    }
+
+}
+
+.nav-active{
+    transform: translateX(0%);
+}
+
+@keyframes navLinkFade{
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+
+
